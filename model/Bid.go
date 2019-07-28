@@ -7,9 +7,9 @@ type Stats struct {
 }
 
 type Item struct {
-	ID   string `json:"id,omitempty"`
-	Hits int    `json:"hits,omitempty"`
-	Best Bid    `json:"best_bid,omitempty"`
+	Item_id int `json:"item_id,omitempty"`
+	Hits    int `json:"hits,omitempty"`
+	Best    Bid `json:"best_bid,omitempty"`
 }
 
 type Bid struct {
