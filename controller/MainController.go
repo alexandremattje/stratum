@@ -24,7 +24,7 @@ func CreateBid(w http.ResponseWriter, r *http.Request) {
 func saveBid(bidRequest BidRequest) {
 	allBids.Total_bids++
 
-	var bid = Bid{Client_id: bidRequest.Client_id, Price: bidrequest.Price, Time_stamp: 9}
+	var bid = Bid{Client_id: bidRequest.Client_id, Price: bidRequest.Price, Time_stamp: 9}
 
 	var idx = -1
 	for i := range allBids.Items {
@@ -37,7 +37,7 @@ func saveBid(bidRequest BidRequest) {
 	var item Item
 
 	if idx == -1 {
-		item = Item{Item_id: bidRequest.Item_id, Hits: 1, Best: Bid}
+		item = Item{Item_id: bidRequest.Item_id, Hits: 1, Best: bid}
 		allBids.Items = append(allBids.Items, item)
 	}
 
