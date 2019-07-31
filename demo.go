@@ -17,5 +17,7 @@ func main() {
 	router.HandleFunc("/bid", CreateBid).Methods("POST")
 	router.HandleFunc("/stats", GetStats).Methods("GET")
 
+	LoadData()
+
 	log.Fatal(http.ListenAndServe(":8000", router))
 }

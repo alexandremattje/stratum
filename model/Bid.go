@@ -7,19 +7,19 @@ type Stats struct {
 }
 
 type Item struct {
-	Item_id int `json:"item_id,omitempty"`
-	Hits    int `json:"hits,omitempty"`
-	Best    Bid `json:"best_bid,omitempty"`
+	Item_id string `json:"item_id,omitempty"`
+	Hits    int    `json:"hits,omitempty"`
+	Best    Bid    `json:"best_bid,omitempty"`
 }
 
 type Bid struct {
-	Client_id  int     `json:"client_id,omitempty"`
+	Client_id  string  `json:"client_id,omitempty"`
 	Price      float32 `json:"price,omitempty"`
 	Time_stamp int64   `json:"time_stamp,omitempty"`
 }
 
 type BidRequest struct {
-	Item_id   int     `json:"item_id,omitempty"`
+	Item_id   string  `json:"item_id,omitempty"`
 	Price     float32 `json:"price,omitempty"`
-	Client_id int     `json:"client_id,omitempty"`
+	Client_id string  `json:"client_id,omitempty"`
 }

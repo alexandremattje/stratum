@@ -1,0 +1,23 @@
+{
+ "total_bids": 2,
+ "items": [
+  {
+   "item_id": "1234",
+   "hits": 1,
+   "best_bid": {
+    "client_id": "456",
+    "price": 222.2,
+    "time_stamp": 1564613460
+   }
+  },
+  {
+   "item_id": "123",
+   "hits": 1,
+   "best_bid": {
+    "client_id": "456",
+    "price": 123.98,
+    "time_stamp": 1564613980
+   }
+  }
+ ]
+}
