@@ -9,3 +9,6 @@ Como é uma aplicação pequena não vi a necessidade de separar os métodos de 
 
 ### Testes
 Testes ainda não desenvolvidos
+
+### Controle de concerrência
+Validação necessária para encontrar o melhor Bid e incluir itens na lista. Nâo implementado ainda.
